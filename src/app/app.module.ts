@@ -4,10 +4,18 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { AnimalListComponent } from './animal-list/animal-list.component';
+import { NewAnimalComponent } from './new-animal/new-animal.component';
+import { AgePipe } from './age.pipe';
+import { CaretakerPipe } from './caretaker.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AnimalListComponent,
+    NewAnimalComponent,
+    AgePipe,
+    CaretakerPipe
   ],
   imports: [
     BrowserModule,

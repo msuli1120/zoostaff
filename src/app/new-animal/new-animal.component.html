@@ -1,0 +1,24 @@
+<div class="col-md-12">
+  <button (click)="editForm=!eidtForm">Add A New Animal</button>
+  <div *ngIf="editForm">
+    <label>Enter Name: </label>
+    <input #name required>
+    <label>Enter Species: </label>
+    <input #species required>
+    <label>Enter Sex: </label>
+    <input #sex required>
+    <label>Enter Age: </label>
+    <input #age required>
+    <label>Enter Diet: </label>
+    <input #diet required>
+    <label>Enter location: </label>
+    <input #location required>
+    <label>Enter Caretakes: </label>
+    <input #caretakers required>
+    <label>Enter Likes: </label>
+    <input #likes required>
+    <label>Enter Dislikes: </label>
+    <input #dislikes required>
+    <button (click)="submit(species.value, name.value, age.value, diet.value, location.value, caretakers.value, sex.value, likes.value, dislikes.value)">Submit</button>
+  </div>
+</div>
