@@ -8,9 +8,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   * 1: Able to display animal list (list-component)
   * 2: Able to add a new animal (edit-component)
   * 3: Able to edit name, age and dislikes by clicking name
-  * 4: Use fire base
-  * 5: Retrieve data from database
-  * 6: Able to add a new animal to database
+  * 4: Able to sort by age and the number of caretakers (pipe)
+  * 5: Use fire base
+  * 6: Retrieve data from database
+  * 7: Able to add a new animal to database
 
 ## Installation
 
