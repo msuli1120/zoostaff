@@ -12,7 +12,6 @@ export class AnimalListComponent implements OnInit {
   @Input() animals: Animal[];
   changeAge(option) {
     this.filterByAge = option;
-    console.log(option);
   }
   changeCareTaker(option) {
     this.filterByCareTaker = option;

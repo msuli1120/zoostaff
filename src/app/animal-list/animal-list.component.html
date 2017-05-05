@@ -10,7 +10,7 @@
   </select>
 </div>
 
-<div *ngFor="let animal of animals | age:filterByAge | caretaker:filterByCareTaker" class="panel panel-default col-md-6">
+<div *ngFor="let animal of animals | async | age:filterByAge | caretaker:filterByCareTaker" class="panel panel-default col-md-6">
   <div class="panel-heading">
     <h4 (click)="animal.edit=!animal.edit">{{animal.name}}</h4>
     <input [(ngModel)]="animal.name" placeholder={{animal.name}} *ngIf="animal.edit">

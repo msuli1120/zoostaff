@@ -8,6 +8,16 @@ import { AnimalListComponent } from './animal-list/animal-list.component';
 import { NewAnimalComponent } from './new-animal/new-animal.component';
 import { AgePipe } from './age.pipe';
 import { CaretakerPipe } from './caretaker.pipe';
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+
+
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 
 @NgModule({
   declarations: [
@@ -20,7 +30,8 @@ import { CaretakerPipe } from './caretaker.pipe';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
